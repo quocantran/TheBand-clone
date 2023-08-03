@@ -15,6 +15,7 @@ body{
 }
 
 .header {
+    overflow: hidden;
     height: 46px;
     display: flex;
     justify-content: space-between;
@@ -44,6 +45,9 @@ body{
 
 .nav-right i{
     color: #FFF;
+}
+.bar{
+    display: none;
 }
 
 .nav-left a {
@@ -416,5 +420,52 @@ body{
     100%{
         top: 0;
         opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px){
+    .ticket-modal .container{
+        
+        width: 600px;
+    }
+}
+/* phone */
+@media only screen and (max-width : 739px){
+    .ticket-modal .container{
+        width: 350px;
+    }
+    .member .group{
+        display: block;
+    }
+    .img-wrap{
+        display: block;
+    }
+    #contact .wrapper{
+        display: block;
+        
+    }
+    #contact .name{
+        width: 100%;
+    }
+    #contact input {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .header{
+        display: block;
+        
+    }
+    .nav-right{
+        display: none;
+    }
+    .bar{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .nav-left .home{
+        position: relative;
     }
 }
