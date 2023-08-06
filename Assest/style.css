@@ -15,7 +15,6 @@ body{
 }
 
 .header {
-    overflow: hidden;
     height: 46px;
     display: flex;
     justify-content: space-between;
@@ -467,6 +466,9 @@ body{
     }
     .nav-left .home{
         position: relative;
+    }
+    .header{
+        overflow: hidden;
     }
 }
 
